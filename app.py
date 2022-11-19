@@ -2,7 +2,6 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 import markovify
-import sys
 from flask import Flask, request, render_template
 
 # Flask constructor
@@ -21,7 +20,8 @@ def home():
 @app.route('/success', methods=['POST'])
 def print_data():
     msg = request.form['message']
-    text = msg
+    # text = msg
+    text = "Aladdin is young boy living with his mother in poverty in a town in China. His father died recently, having tried unsuccessfully to persuade his son to knuckle down and learn a trade. Aladdin, however, prefers to go off and play with the other boys in the street.  One day, a sorcerer approaches Aladdin, claiming to be his uncle. He convinces Aladdin to work with him, telling Aladdin that if he does what he tells him, the boy will grow up to be rich. Aladdin’s mother, who has never met the sorcerer before, is initially suspicious of his claim to be a long-lost relative but she becomes convinced that the man is genuine.  The man shows Aladdin gardens full of beautiful riches, before leading Aladdin down into a cave, telling the boy to fetch an oil lamp found inside. He gives Aladdin a magic ring that will protect him while he searches for it. But when he finds the lamp, Aladdin refuses to pass it up to the sorcerer before he is out of the cave, so the sorcerer seals Aladdin inside the cave with the lamp!  But A"
     # Train model
     text_model = markovify.Text(text)
     res = ""
