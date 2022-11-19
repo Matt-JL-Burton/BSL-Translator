@@ -31,6 +31,7 @@ header{
 
 nav{
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     height: 100px;
     padding: 0 16px;
@@ -52,6 +53,17 @@ a{
 ul{
     list-style-type: none;
 }
+.container{
+    padding: 32px 0;
+}
+
+.row{
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*
 
@@ -69,13 +81,13 @@ ul{
 
 .fa-hand-peace{
     margin-right: 16px;
-    font-size: 64px;
+    font-size: 54px;
 }
 
 .logo__text{
-    border-left: 5px solid var(--blue-primary);
+    border-left: 3px solid var(--blue-primary);
     padding-left: 16px;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 500;
 }
 
@@ -89,4 +101,81 @@ ul{
     font-size: 24px;
     font-weight: 500;
     color: var(--blue-primary);
+}
+
+/*
+
+    LANDING
+
+*/
+
+/*
+
+    APPLICATION
+
+*/
+
+
+/* #application{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+
+    min-height: calc(100vh - 100px);
+}
+
+.application__container{
+    max-width: 1000px;
+    width: 100%;
+    height: 500px;
+    border-radius: 24px;
+    background-color: var(--blue-secondary);
+    padding: 32px;
+}
+
+.black{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background-color: black;
+} */
+
+/*
+
+    FOOTER
+
+*/
+
+footer{
+    background-color: #242424;
+}
+
+.nav__links--container{
+    display: flex;
+    margin: 32px 16px;
+}
+
+.footer__text{
+    font-size: 16px;
+    color: rgb(120, 120, 120);
+    border-bottom: 2px solid #242424;
+    padding-bottom: 5px;
+}
+
+.hover__effect{
+    transition: border-bottom 300ms ease;
+}
+
+.hover__effect:hover{
+    border-bottom: 2px solid rgb(120, 120, 120);
+}
+
+.creator__list{
+    text-align: center;
+    margin: 16px 0;
+}
+
+.copyright{
+    margin: 16px 0;
 }

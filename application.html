@@ -8,6 +8,7 @@
     <title>BSL Translator</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/7d8f1910d8.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -33,8 +34,15 @@
             </ul>
         </nav>
     </header>
-    <main>
-        
+    <main id="camera">
+        <canvas id="camera-sensor">
+            <video id="camera--view" autoplay playsinline>
+
+                <img src="//:0" alt="" id="camera--output">
+            </video>
+
+        </canvas>
+
     </main>
 </body>
 <footer>
@@ -78,4 +86,5 @@
         </div>
     </div>
 </footer>
+
 </html>
